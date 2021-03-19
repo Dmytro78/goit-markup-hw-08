@@ -7,6 +7,10 @@
   margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 0px;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
 }
 
 .team-list__cards {

@@ -2,6 +2,10 @@
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
 }
 
 .post__menu {

@@ -1,7 +1,15 @@
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 
-  /* outline: 2px solid red;*/
+  @media (max-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media (max-width: 470px) {
+    background-size: 470px;
+  }
 }
+
+/* outline: 2px solid red;*/

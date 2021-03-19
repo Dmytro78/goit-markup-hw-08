@@ -2,9 +2,11 @@
   display: none;
   margin-top: 0px;
   margin-bottom: 0px;
-}
 
-/*display: flex;*/
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
 
 .site-menu__item {
   position: relative;

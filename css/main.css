@@ -150,6 +150,12 @@ li {
   margin: 0px;
 }
 
+@media (max-width: 767px) {
+  .clients__logos {
+    display: block;
+  }
+}
+
 .clients__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,12 +196,24 @@ li {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  /* outline: 2px solid red;*/
 }
 
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 470px) {
+  .container {
+    background-size: 470px;
+  }
+}
+
+/* outline: 2px solid red;*/
 .contakts-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,6 +343,13 @@ li {
           align-items: baseline;
 }
 
+@media (max-width: 767px) {
+  .footer__container {
+    display: block;
+    margin-left: 0px;
+  }
+}
+
 .footer__contakts {
   width: 100%;
 }
@@ -344,6 +369,12 @@ li {
   margin-left: 70px;
 }
 
+@media (max-width: 470px) {
+  .footer__network {
+    margin-left: 0px;
+  }
+}
+
 .footer__join {
   font-size: 14px;
   line-height: 16px;
@@ -356,6 +387,12 @@ li {
 .footer__mailing {
   width: 100%;
   margin-left: 93px;
+}
+
+@media (max-width: 470px) {
+  .footer__mailing {
+    margin-left: 0px;
+  }
 }
 
 .mailing {
@@ -384,6 +421,14 @@ li {
   margin-left: auto;
 }
 
+@media (min-width: 768px) {
+  .header__contakts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .header-menu__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -402,6 +447,12 @@ li {
   height: 40px;
   border: transparent;
   background: transparent;
+}
+
+@media (min-width: 767px) {
+  .header-menu__btn {
+    display: none;
+  }
 }
 
 .header-menu__icon {
@@ -427,9 +478,15 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 198px;
+  }
 }
 
 .hero__heading {
@@ -981,6 +1038,12 @@ li {
   margin-bottom: 0px;
 }
 
+@media (max-width: 767px) {
+  .post {
+    display: block;
+  }
+}
+
 .post__menu {
   margin-left: 30px;
   margin-top: 0px;
@@ -1101,7 +1164,14 @@ li {
   margin-bottom: 0px;
 }
 
-/*display: flex;*/
+@media (min-width: 768px) {
+  .site-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .site-menu__item {
   position: relative;
   display: block;
@@ -1159,6 +1229,12 @@ li {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+  .team-list {
+    display: block;
+  }
 }
 
 .team-list__cards {

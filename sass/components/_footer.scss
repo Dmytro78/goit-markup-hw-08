@@ -9,6 +9,11 @@
   display: flex;
   justify-content: start;
   align-items: baseline;
+
+  @media (max-width: 767px) {
+    display: block;
+    margin-left: 0px;
+  }
 }
 
 .footer__contakts {
@@ -28,6 +33,10 @@
 
 .footer__network {
   margin-left: 70px;
+
+  @media (max-width: 470px) {
+    margin-left: 0px;
+  }
 }
 
 .footer__join {
@@ -39,10 +48,13 @@
   font-weight: 500;
 }
 
-
 .footer__mailing {
   width: 100%;
   margin-left: 93px;
+
+  @media (max-width: 470px) {
+    margin-left: 0px;
+  }
 }
 
 .mailing {

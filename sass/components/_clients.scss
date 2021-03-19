@@ -21,6 +21,10 @@
   align-items: center;
   justify-content: center;
   margin: 0px;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
 }
 
 .clients__item {

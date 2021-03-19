@@ -11,4 +11,8 @@
 .header__contakts {
   display: none;
   margin-left: auto;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
