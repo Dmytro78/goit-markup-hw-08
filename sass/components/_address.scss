@@ -1,0 +1,45 @@
+.address {
+  display: block;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  list-style-type: none;
+}
+
+.contakts__adress {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 9px;
+  color: var(--text-color);
+  
+  
+  &:hover,
+  &:focus {color: var(--button-color); 
+  }
+
+}
+
+.contakts__mailto {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 9px;
+  color: var(--gray-op60);
+   
+  &:hover,
+  &:focus {color: var(--button-color); 
+  }
+
+}
+
+.contakts__tel {
+  display: block;
+  text-decoration: none;
+  color: var(--gray-op60);
+   
+  &:hover,
+  &:focus {color: var(--button-color); 
+  }
+
+}
+

@@ -1,0 +1,46 @@
+.contakts-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  padding-left: 0px;
+}
+
+.contakts-menu__item {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+
+  padding: 0px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--main-gray);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    color: var(--button-color);
+  }
+}
+
+.contakts-menu__link:last-child {
+  margin-left: 30px;
+}
+
+.contakts-menu__icon {
+  fill: currentColor;
+  margin-right: 10px;
+  display: inline-block;
+  align-items: center;
+}

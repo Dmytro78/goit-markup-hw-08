@@ -1,0 +1,28 @@
+.portfolio-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.portfolio-btns__btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+  margin-left: 0px;
+  margin-top: 0px;
+  text-align: center;
+  border-style: hidden;
+  border-radius: 4px;
+}
+
+.portfolio-btns__list {
+  margin-left: 8px;
+
+  &:first-child {
+    margin-left: 0px;
+  }
+}

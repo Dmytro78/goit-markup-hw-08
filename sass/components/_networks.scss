@@ -1,0 +1,39 @@
+.networks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.networks__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  color: var(--network-color);
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border-radius: 50%;
+  }
+}
+
+.networks__img {
+  fill: currentColor;
+}
+
+.networks__list {
+  margin-left: 10px;
+
+  &:first-child {
+    margin-left: 0px;
+  }
+}

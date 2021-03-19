@@ -1,0 +1,55 @@
+.footer {
+  background: var(--accent-background-color);
+  color: var(--text-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+}
+
+.footer__contakts {
+  width: 100%;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  font-family: 'Raleway', sans-serif;
+}
+
+.footer__network {
+  margin-left: 70px;
+}
+
+.footer__join {
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+
+.footer__mailing {
+  width: 100%;
+  margin-left: 93px;
+}
+
+.mailing {
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+}

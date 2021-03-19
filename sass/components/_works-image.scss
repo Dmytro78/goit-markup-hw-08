@@ -1,0 +1,32 @@
+.works-image__thumbs {
+  position: relative;
+  display: block;
+  width: 370px;
+}
+
+.works-image__box {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  position: absolute;
+  width: 370px;
+  height: 23.8%;
+  background-color: var(--gradient-color-work);
+  bottom: 1%;
+}
+
+.works-image__name {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  margin: 0px;
+
+  color: var(--text-color);
+}
