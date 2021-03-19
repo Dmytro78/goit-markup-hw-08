@@ -380,7 +380,40 @@ li {
 }
 
 .header__contakts {
+  display: none;
   margin-left: auto;
+}
+
+.header-menu__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  padding: 0px;
+  width: 40px;
+  height: 40px;
+  border: transparent;
+  background: transparent;
+}
+
+.header-menu__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hero {
@@ -1063,13 +1096,12 @@ li {
 }
 
 .site-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
+/*display: flex;*/
 .site-menu__item {
   position: relative;
   display: block;
@@ -1232,6 +1264,7 @@ li {
 }
 
 .works {
+  display: none;
   margin-top: 0px;
   padding-bottom: 94px;
 }
