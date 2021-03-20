@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: center;
 
+  cursor: pointer;
+
   margin-left: auto;
   margin-top: 22px;
   margin-bottom: 22px;
@@ -17,6 +19,10 @@
 
   @media (min-width: 767px) {
     display: none;
+  }
+
+  &:hover {
+    fill: var(--button-color);
   }
 }
 
