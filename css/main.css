@@ -59,6 +59,7 @@ li {
 }
 
 .about-us {
+  display: none;
   padding: 94px 15px;
 }
 
@@ -122,6 +123,7 @@ li {
 }
 
 .clients {
+  display: none;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -196,20 +198,21 @@ li {
 }
 
 .container {
-  max-width: 1200px;
+  min-width: 320px;
+  max-width: 480px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 }
 
-@media (max-width: 470px) {
+@media (min-width: 1200px) {
   .container {
-    background-size: 470px;
+    max-width: 1200px;
   }
 }
 
@@ -325,6 +328,7 @@ li {
 }
 
 .footer {
+  display: none;
   background: var(--accent-background-color);
   color: var(--text-color);
   padding-top: 60px;
@@ -468,24 +472,33 @@ li {
 }
 
 .hero {
-  background: var(--accent-background-color);
+  background: none;
   color: var(--text-color);
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--gradient-color)), to(var(--gradient-color))), url(../images/fond.jpg);
-  background-image: linear-gradient(to right, var(--gradient-color), var(--gradient-color)), url(../images/fond.jpg);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--gradient-color)), to(var(--gradient-color))), url(../images/fond@2x.jpg);
+  background-image: linear-gradient(to right, var(--gradient-color), var(--gradient-color)), url(../images/fond@2x.jpg);
+  max-width: 470px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-position: center;
+  background-size: auto 400px;
+  background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 767px) {
   .hero {
-    padding-top: 118px;
-    padding-bottom: 198px;
+    max-width: 767px;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    max-width: 1200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -496,6 +509,13 @@ li {
   line-height: 60px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .hero__heading {
+    font-size: 26px;
+    line-height: 42px;
+  }
 }
 
 .hero__btn {
@@ -1241,6 +1261,7 @@ li {
   margin-top: -4px;
   padding: 30px 32px;
   background-color: var(--text-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list__item {
@@ -1269,6 +1290,7 @@ li {
 }
 
 .team {
+  display: none;
   margin-top: 0px;
   padding-top: 94px;
   padding-bottom: 94px;
