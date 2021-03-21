@@ -59,8 +59,13 @@ li {
 }
 
 .about-us {
-  display: none;
-  padding: 94px 15px;
+  padding: 60px 0px;
+}
+
+@media (min-width: 1200px) {
+  .about-us {
+    padding: 94px 15px;
+  }
 }
 
 .address {
@@ -1122,30 +1127,39 @@ li {
 }
 
 .post {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .post {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
 .post__menu {
-  margin-left: 30px;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 }
 
-.post__menu:first-child {
-  margin-left: 0px;
+@media (min-width: 767px) {
+  .post__menu {
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 767px) {
+  .post__menu:first-child {
+    margin-left: 0px;
+  }
 }
 
 .post__title {
+  text-align: center;
   margin: 0px;
   margin-bottom: 14px;
   font-size: 14px;
@@ -1176,10 +1190,22 @@ li {
           justify-content: center;
   margin-right: auto;
   margin-left: auto;
-  width: 270px;
+  max-width: 450px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
+}
+
+@media (min-width: 767px) {
+  .post__icon {
+    max-width: 354px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .post__icon {
+    max-width: 270px;
+  }
 }
 
 .signup-form {
@@ -1300,6 +1326,12 @@ li {
   background-color: var(--button-color);
   border-radius: 2px;
   margin-bottom: -1px;
+}
+
+@media (min-width: 1200px) {
+  .site-menu__item--carrnet::after {
+    margin-bottom: -3px;
+  }
 }
 
 .site-menu__link {

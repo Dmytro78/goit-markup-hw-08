@@ -1,24 +1,31 @@
 .post {
-  display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
 
-  @media (max-width: 767px) {
-    display: block;
+  @media (min-width: 767px) {
+    display: flex;
   }
 }
 
 .post__menu {
-  margin-left: 30px;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
+
+  @media (min-width: 767px) {
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 
   &:first-child {
-    margin-left: 0px;
+    @media (min-width: 767px) {
+      margin-left: 0px;
+    }
   }
 }
 
 .post__title {
+  text-align: center;
   margin: 0px;
   margin-bottom: 14px;
   font-size: 14px;
@@ -43,8 +50,16 @@
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
-  width: 270px;
+  max-width: 450px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
+
+  @media (min-width: 767px) {
+    max-width: 354px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 270px;
+  }
 }
