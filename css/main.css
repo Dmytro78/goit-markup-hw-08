@@ -128,7 +128,7 @@ li {
 }
 
 .clients {
-  padding-top: 60px;
+  padding-top: 60 px;
   padding-bottom: 60px;
 }
 
@@ -176,6 +176,14 @@ li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0px;
+}
+
+@media (max-width: 479px) {
+  .clients__logos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -242,6 +250,12 @@ li {
 .clients__list {
   margin-left: 30px;
   margin-bottom: 30px;
+}
+
+@media (max-width: 479px) {
+  .clients__list {
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -457,7 +471,6 @@ li {
 }
 
 .footer {
-  display: none;
   background: var(--accent-background-color);
   color: var(--text-color);
   padding-top: 60px;
@@ -468,19 +481,16 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-}
-
-@media (max-width: 767px) {
-  .footer__container {
-    display: block;
-    margin-left: 0px;
-  }
 }
 
 .footer__contakts {
@@ -502,7 +512,7 @@ li {
   margin-left: 70px;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 767px) {
   .footer__network {
     margin-left: 0px;
   }
@@ -522,7 +532,7 @@ li {
   margin-left: 93px;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 767px) {
   .footer__mailing {
     margin-left: 0px;
   }

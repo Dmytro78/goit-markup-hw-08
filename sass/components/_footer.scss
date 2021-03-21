@@ -1,5 +1,4 @@
 .footer {
-  display: none;
   background: var(--accent-background-color);
   color: var(--text-color);
   padding-top: 60px;
@@ -8,13 +7,9 @@
 
 .footer__container {
   display: flex;
+  flex-direction: column;
   justify-content: start;
   align-items: baseline;
-
-  @media (max-width: 767px) {
-    display: block;
-    margin-left: 0px;
-  }
 }
 
 .footer__contakts {
@@ -35,7 +30,7 @@
 .footer__network {
   margin-left: 70px;
 
-  @media (max-width: 470px) {
+  @media (max-width: 767px) {
     margin-left: 0px;
   }
 }
@@ -53,7 +48,7 @@
   width: 100%;
   margin-left: 93px;
 
-  @media (max-width: 470px) {
+  @media (max-width: 767px) {
     margin-left: 0px;
   }
 }

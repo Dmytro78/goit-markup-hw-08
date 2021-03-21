@@ -12,12 +12,11 @@
   text-decoration: none;
   margin-bottom: 9px;
   color: var(--text-color);
-  
-  
-  &:hover,
-  &:focus {color: var(--button-color); 
-  }
 
+  &:hover,
+  &:focus {
+    color: var(--button-color);
+  }
 }
 
 .contakts__mailto {
@@ -25,21 +24,20 @@
   text-decoration: none;
   margin-bottom: 9px;
   color: var(--gray-op60);
-   
-  &:hover,
-  &:focus {color: var(--button-color); 
-  }
 
+  &:hover,
+  &:focus {
+    color: var(--button-color);
+  }
 }
 
 .contakts__tel {
   display: block;
   text-decoration: none;
   color: var(--gray-op60);
-   
+
   &:hover,
-  &:focus {color: var(--button-color); 
+  &:focus {
+    color: var(--button-color);
   }
-
 }
-
