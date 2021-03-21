@@ -1,9 +1,13 @@
 .team {
-  display: none;
   margin-top: 0px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: var(--background-color);
+
+  @media (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__heading {
@@ -12,9 +16,14 @@
   margin-right: auto;
   margin-left: auto;
 
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 33px;
   letter-spacing: 0.03em;
-
   text-align: center;
+
+  @media (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+  }
 }
