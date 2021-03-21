@@ -1488,9 +1488,14 @@ li {
 }
 
 .works {
-  display: none;
   margin-top: 0px;
   padding-bottom: 94px;
+}
+
+@media (max-width: 1200px) {
+  .works {
+    display: none;
+  }
 }
 
 .works__title {
