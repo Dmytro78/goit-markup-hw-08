@@ -635,6 +635,7 @@ li {
   height: 40px;
   border: transparent;
   background: transparent;
+  color: var(--text-color);
 }
 
 @media (min-width: 767px) {
@@ -1193,12 +1194,12 @@ li {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  /*justify-content: center;*/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-top: 0px;
   margin-bottom: 0px;
+  /*justify-content: center;*/
 }
 
 @media (min-width: 767px) {
@@ -1880,5 +1881,87 @@ li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 0px;
+}
+
+.menu__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--text-color);
+  z-index: 3;
+  padding: 48px 40px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--cubic-bezier);
+          transition-timing-function: var(--cubic-bezier);
+}
+
+.menu__container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  border-radius: none;
+  border-color: transparent;
+  background-color: var(--text-color);
+}
+
+.menu-btn:hover {
+  fill: var(--button-color);
+}
+
+.mobile-menu {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.menu__contakts {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.menu__networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: var(--button-color);
+}
+
+.mobile-menu__item,
+.network__item {
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

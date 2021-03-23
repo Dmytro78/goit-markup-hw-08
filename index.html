@@ -39,7 +39,7 @@
                 </svg>+38 096 111 11 11</a></li>
                 </ul>
             </div>
-            <button class="header-menu__btn" js-open-menu>
+            <button class="header-menu__btn js-open-menu" aria-expanded="false" aria-controls="mobil-menu" >
                 <svg class="header-menu__icon" width="24" height="16">
                     <use href="./images/sprite.svg#menu"></use>
                 </svg>
@@ -419,6 +419,33 @@
         </div>
     </footer>
 
+<!-- M E N U-->
+<div class="menu__container js-menu-container" id="mobile-menu">
+    <button class="menu-btn js-close-menu">
+        <svg class="modal-close" width="11" height="11">
+            <use href="./images/sprite.svg#cross"></use>
+        </svg>
+    </button>
+   <ul class="mobile-menu">
+    <li class="mobile-menu__link"><a href="#" class="mobile-menu__item mobil-menu--carrnet">Студия</a></li>
+    <li class="mobile-menu__link"><a href="./portfolio.html" class="mobile-menu__item">Портфолио</a></li>
+    <li class="mobile-menu__link"><a href="#footer" class="mobile-menu__item">Контакты</a></li>
+   </ul>
+   <ul class="menu__contakts">
+    <li class="contakts-menu__link"><a class="contakts-menu__item" href="tel:+380961111111">+38 096 111 11 11</a>
+    </li>  
+    <li class="contakts-menu__link"><a class="contakts-menu__item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    </li>
+    </ul>
+    <ul class="menu__networks">
+    <li class="menu__network"><a href="#" class="network__item">Instagram</a></li>
+    <li class="menu__network"><a href="#" class="network__item">Twitter</a></li>
+    <li class="menu__network"><a href="#" class="network__item">Facebook</a></li>
+    <li class="menu__network"><a href="#" class="network__item">LinkedIn</a></li>
+    </ul>   
+</div>
+
+
 <!-- M O D A L -->
 
 <div class="backdrop is-hidden" data-modal>
@@ -477,6 +504,10 @@
     </div>
 </div>
 
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 </html>
