@@ -33,11 +33,12 @@
 }
 
 .footer__network {
-  margin-left: 70px;
-
   @media (max-width: 767px) {
     margin-top: 60px;
-    margin-left: 0px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 70px;
   }
 }
 
@@ -52,11 +53,14 @@
 
 .footer__mailing {
   width: 100%;
-  margin-left: 93px;
+  margin-left: 0px;
 
   @media (max-width: 767px) {
     margin-top: 20px;
-    margin-left: 0px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 93px;
   }
 }
 
