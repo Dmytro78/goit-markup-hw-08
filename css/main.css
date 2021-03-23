@@ -1284,8 +1284,8 @@ li {
 }
 
 .portfolio-post__item {
-  -ms-flex-preferred-size: calc(100% / 3 - 30px);
-      flex-basis: calc(100% / 3 - 30px);
+  height: 440px;
+  width: 450px;
   margin-top: 30px;
   margin-left: 30px;
   outline: 1px solid #ececec;
@@ -1303,8 +1303,20 @@ li {
 @media (max-width: 767px) {
   .portfolio-post__item {
     margin-left: 0px;
-    width: 450px;
-    height: 404px;
+  }
+}
+
+@media (min-width: 767px) {
+  .portfolio-post__item {
+    width: 354px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio-post__item {
+    width: 370px;
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
   }
 }
 
