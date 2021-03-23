@@ -558,12 +558,6 @@ li {
   font-weight: 500;
 }
 
-.footer__tablet {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .header {
   border-bottom: 1px solid var(--border-header);
 }
@@ -1349,9 +1343,15 @@ li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .signup-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1372,15 +1372,10 @@ li {
   border-radius: 4px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1200px) {
   .signup-form__input {
     margin-bottom: 0px;
     margin-right: 12px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .signup-form__input {
     width: 358px;
   }
 }
