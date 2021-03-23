@@ -7,6 +7,10 @@
   background-color: var(--text-color);
   z-index: 3;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   padding: 48px 40px;
 
   transform: translateX(100%);
@@ -45,6 +49,14 @@
 .mobile-menu {
   margin-top: 0px;
   margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+}
+
+.mobile-menu__link {
+  margin-bottom: 32px;
 }
 
 .menu__contakts {
@@ -55,6 +67,8 @@
 .menu__networks {
   display: flex;
   justify-content: space-between;
+  text-align: center;
+  align-items: center;
   margin-top: 0px;
   margin-bottom: 0px;
 
@@ -62,11 +76,41 @@
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
-
-  color: var(--button-color);
 }
 
 .mobile-menu__item,
 .network__item {
   text-decoration: none;
+  color: #212121;
+
+  &:hover {
+    color: var(--button-color);
+  }
+}
+
+.network__item {
+  color: var(--button-color);
+}
+
+.network__img {
+  fill: rgba(33, 33, 33, 0.2);
+}
+
+.contakts-menu__tel {
+  color: var(--button-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+}
+
+.contakts-menu__mailo {
+  color: var(--main-gray);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
 }
