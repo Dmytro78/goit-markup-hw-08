@@ -8,6 +8,12 @@
 .footer__container {
   text-align: center;
 
+  @media (min-width: 767px) and (max-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
   @media (min-width: 1200px) {
     display: flex;
     justify-content: start;
@@ -18,7 +24,9 @@
 }
 
 .footer__contakts {
-  width: 100%;
+  @media (min-width: 1200px) {
+    width: 100%;
+  }
 }
 
 .footer__logo {
@@ -35,6 +43,10 @@
 .footer__network {
   @media (max-width: 767px) {
     margin-top: 60px;
+  }
+
+  @media (min-width: 767px) and (max-width: 1200px) {
+    margin-top: 6px;
   }
 
   @media (min-width: 1200px) {
@@ -61,6 +73,10 @@
 
   @media (min-width: 1200px) {
     margin-left: 93px;
+  }
+
+  @media (min-width: 767px) and (max-width: 1200px) {
+    margin-top: 60px;
   }
 }
 
