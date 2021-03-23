@@ -478,19 +478,22 @@ li {
 }
 
 .footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    text-align: left;
+  }
 }
 
 .footer__contakts {
@@ -514,6 +517,7 @@ li {
 
 @media (max-width: 767px) {
   .footer__network {
+    margin-top: 60px;
     margin-left: 0px;
   }
 }
@@ -534,6 +538,7 @@ li {
 
 @media (max-width: 767px) {
   .footer__mailing {
+    margin-top: 20px;
     margin-left: 0px;
   }
 }
@@ -1324,20 +1329,22 @@ li {
   }
 }
 
-.signup-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media (min-width: 767px) {
+  .signup-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .signup-form__input {
   font-family: inherit;
-  width: 358px;
+  width: 450px;
   height: 50px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   padding: 15px 0px;
   padding-left: 16px;
   background-color: transparent;
@@ -1350,11 +1357,26 @@ li {
   border-radius: 4px;
 }
 
+@media (min-width: 767px) {
+  .signup-form__input {
+    margin-bottom: 0px;
+    margin-right: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .signup-form__input {
+    width: 358px;
+  }
+}
+
 .signup-form__input:hover, .signup-form__input:focus {
   border: 1px solid var(--button-color);
 }
 
 .signup-form__btn {
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
