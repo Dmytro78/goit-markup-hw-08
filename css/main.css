@@ -1193,9 +1193,7 @@ li {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  /*justify-content: center;*/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1284,8 +1282,8 @@ li {
 }
 
 .portfolio-post__item {
-  height: 440px;
   width: 450px;
+  height: 404px;
   margin-top: 30px;
   margin-left: 30px;
   outline: 1px solid #ececec;
@@ -1309,12 +1307,14 @@ li {
 @media (min-width: 767px) {
   .portfolio-post__item {
     width: 354px;
+    height: 440px;
   }
 }
 
 @media (min-width: 1200px) {
   .portfolio-post__item {
     width: 370px;
+    height: 404px;
     -ms-flex-preferred-size: calc(100% / 3 - 30px);
         flex-basis: calc(100% / 3 - 30px);
   }
