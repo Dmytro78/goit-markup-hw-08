@@ -1,9 +1,16 @@
 .portfolio-btns {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  @media (min-width: 767px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-btns__btn {
@@ -24,5 +31,17 @@
 
   &:first-child {
     margin-left: 0px;
+  }
+
+  &:nth-child(4) {
+    @media (max-width: 767px) {
+      margin-left: 0px;
+    }
+  }
+
+  &:nth-child(-n + 3) {
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
+    }
   }
 }
