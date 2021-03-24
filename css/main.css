@@ -1884,39 +1884,47 @@ li {
 }
 
 .menu__container {
-  position: fixed;
+  display: inline-block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: var(--text-color);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--cubic-bezier);
+          transition-timing-function: var(--cubic-bezier);
+  /* position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: var(--text-color);
   z-index: 3;
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
+
   padding: 48px 40px;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--cubic-bezier);
-          transition-timing-function: var(--cubic-bezier);
+
+  transform: translateX(100%);
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);*/
 }
 
 .menu__container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  opacity: 1;
 }
 
 .menu-btn {
@@ -1989,6 +1997,10 @@ li {
 
 .mobile-menu__item:hover,
 .network__item:hover {
+  color: var(--button-color);
+}
+
+.mobile-menu__item--carrnet {
   color: var(--button-color);
 }
 
