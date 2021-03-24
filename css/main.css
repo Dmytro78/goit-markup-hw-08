@@ -1433,6 +1433,7 @@ li {
 .post__title {
   text-align: center;
   margin: 0px;
+  font-weight: 700;
   margin-bottom: 14px;
   font-size: 14px;
   line-height: 16px;
@@ -1901,7 +1902,9 @@ li {
           transition-duration: 250ms;
   -webkit-transition-timing-function: var(--cubic-bezier);
           transition-timing-function: var(--cubic-bezier);
-  /* position: fixed;
+}
+
+/* position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -1918,8 +1921,6 @@ li {
   transform: translateX(100%);
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);*/
-}
-
 .menu__container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
