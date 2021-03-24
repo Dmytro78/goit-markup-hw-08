@@ -3,8 +3,8 @@
   --text-color: #ffffff;
   --button-color: #2196f3;
   --main-gray: #757575;
-  --gray-op60: rgba(255, 255, 255, 0.6);
-  --gray-op10: rgba(255, 255, 255, 0.1);
+  --contakts-footer: rgba(255, 255, 255, 0.6);
+  --background-network: rgba(255, 255, 255, 0.1);
   --accent-background-color: #2f303a;
   --background-color: #f5f4fa;
   --network-color: #afb1b8;
@@ -92,7 +92,7 @@ li {
   display: block;
   text-decoration: none;
   margin-bottom: 9px;
-  color: var(--gray-op60);
+  color: var(--contakts-footer);
 }
 
 .contakts__mailto:hover, .contakts__mailto:focus {
@@ -102,7 +102,7 @@ li {
 .contakts__tel {
   display: block;
   text-decoration: none;
-  color: var(--gray-op60);
+  color: var(--contakts-footer);
 }
 
 .contakts__tel:hover, .contakts__tel:focus {
@@ -448,7 +448,7 @@ li {
           justify-content: center;
   width: 44px;
   height: 44px;
-  background-color: var(--gray-op10);
+  background-color: var(--background-network);
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -1028,7 +1028,7 @@ li {
   margin-left: auto;
   margin-right: auto;
   color: var(--text-color);
-  background: #2196f3;
+  background: var(--button-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -1550,7 +1550,7 @@ li {
   padding-left: 29px;
   color: var(--text-color);
   border: none;
-  background: #2196f3;
+  background: var(--button-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
