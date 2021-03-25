@@ -1556,6 +1556,12 @@ li {
   border-radius: 4px;
 }
 
+@media (min-width: 767px) {
+  .signup-form__input {
+    width: 450px;
+  }
+}
+
 @media (min-width: 1200px) {
   .signup-form__input {
     margin-bottom: 0px;
