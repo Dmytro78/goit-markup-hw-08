@@ -1275,13 +1275,13 @@ li {
 }
 
 .portfolio-post__item:hover .portfolio-post__thumb::before,
-.portfolio-post__item:focus .portfolio-post__thumb::before {
+.portfolio-post__item:focus-within .portfolio-post__thumb::before {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
 .portfolio-post__item:hover .portfolio-post__thumb-text,
-.portfolio-post__item:focus .portfolio-post__thumb-text {
+.portfolio-post__item:focus-within .portfolio-post__thumb-text {
   opacity: 1;
 }
 
@@ -1299,13 +1299,13 @@ li {
 }
 
 .portfolio-post__link:hover .portfolio-post__thumb::before,
-.portfolio-post__link:focus .portfolio-post__thumb::before {
+.portfolio-post__link:focus-within .portfolio-post__thumb::before {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
 .portfolio-post__link:hover .portfolio-post__thumb-text,
-.portfolio-post__link:focus .portfolio-post__thumb-text {
+.portfolio-post__link:focus-within .portfolio-post__thumb-text {
   opacity: 1;
 }
 
