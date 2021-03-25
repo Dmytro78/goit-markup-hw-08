@@ -11,7 +11,7 @@
   padding: 48px 40px;
 
   background-color: var(--text-color);
-  transform: translateX(100%);
+  transform: translateY(100%);
 
   opacity: 0;
 
@@ -39,7 +39,7 @@
   transition-timing-function: var(--cubic-bezier);*/
 
 .menu__container.is-open {
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 1;
 }
 
@@ -80,11 +80,15 @@
 }
 
 .menu__contakts {
-  margin-top: 0px;
+  margin-top: auto;
   margin-bottom: 0px;
 }
 
 .menu__networks {
+  @media (max-width: 450px) {
+    flex-wrap: wrap;
+  }
+
   display: flex;
   justify-content: space-between;
   text-align: center;
