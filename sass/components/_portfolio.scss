@@ -3,3 +3,9 @@
   padding-bottom: 94px;
   margin: 0 auto;
 }
+
+.portfolio__container {
+  @media (max-width: 449px) {
+    padding: 0px;
+  }
+}

@@ -1163,11 +1163,14 @@ li {
 }
 
 .portfolio-btns__list:first-child {
-  margin-left: 0px;
+  /*&:nth-child(4) {
+    @media (max-width: 767px) {
+      margin-left: 0px;
+    }*/
 }
 
-@media (max-width: 767px) {
-  .portfolio-btns__list:nth-child(4) {
+@media (min-width: 767px) {
+  .portfolio-btns__list:first-child {
     margin-left: 0px;
   }
 }
@@ -1211,6 +1214,7 @@ li {
           align-items: center;
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-left: 0px;
   /*justify-content: center;*/
 }
 
@@ -1229,7 +1233,7 @@ li {
           align-items: center;
   position: relative;
   overflow: hidden;
-  width: 450px;
+  min-width: 320px;
   height: 294px;
 }
 
@@ -1261,8 +1265,8 @@ li {
   width: 100%;
   height: 100%;
   background-color: var(--button-color);
-  -webkit-transform: translateY(103%);
-          transform: translateY(103%);
+  -webkit-transform: translateY(102%);
+          transform: translateY(102%);
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
@@ -1295,8 +1299,7 @@ li {
 }
 
 .portfolio-post__item {
-  width: 450px;
-  height: 404px;
+  min-width: 320px;
   margin-top: 30px;
   margin-left: 30px;
   outline: 1px solid #ececec;
@@ -1327,7 +1330,7 @@ li {
 @media (min-width: 1200px) {
   .portfolio-post__item {
     width: 370px;
-    height: 404px;
+    max-height: 404px;
     -ms-flex-preferred-size: calc(100% / 3 - 30px);
         flex-basis: calc(100% / 3 - 30px);
   }
@@ -1339,8 +1342,8 @@ li {
   }
 }
 
-.portfolio .portfolio-post__item:hover,
-.portfolio .portfolio-post__item:focus {
+.portfolio-post__item:hover,
+.portfolio-post__item:focus {
   -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
@@ -1366,20 +1369,30 @@ li {
           box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio .portfolio-post__item:hover .portfolio-post__thumb-text,
-.portfolio .portfolio-post__item:focus .portfolio-post__thumb-text {
+.portfolio-post__item:hover .portfolio-post__thumb-text,
+.portfolio-post__item:focus .portfolio-post__thumb-text {
   opacity: 1;
+  -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-post__link:hover .portfolio-post__thumb-text,
 .portfolio-post__link:focus .portfolio-post__thumb-text {
   opacity: 1;
+  -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
   margin: 0 auto;
+}
+
+@media (max-width: 449px) {
+  .portfolio__container {
+    padding: 0px;
+  }
 }
 
 .post {
@@ -1900,8 +1913,9 @@ li {
   height: 100vh;
   padding: 48px 40px;
   background-color: var(--text-color);
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  z-index: 3;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   opacity: 0;
   -webkit-transition-property: opacity;
   transition-property: opacity;
@@ -1929,8 +1943,8 @@ li {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);*/
 .menu__container.is-open {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
   opacity: 1;
 }
 
@@ -2043,11 +2057,5 @@ li {
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
-}
-
-@media (max-width: 450px) {
-  .network__img:nth-child(2) {
-    display: none;
-  }
 }
 /*# sourceMappingURL=main.css.map */
