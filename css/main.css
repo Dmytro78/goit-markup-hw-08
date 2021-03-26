@@ -683,7 +683,7 @@ li {
 
 @media (min-width: 767px) {
   .hero {
-    max-width: 767px;
+    max-width: 1600px;
     background-color: var(--accent-background-color);
     background-image: -webkit-gradient(linear, left top, right top, from(var(--gradient-color)), to(var(--gradient-color))), url(../images/herotablet.jpg);
     background-image: linear-gradient(to right, var(--gradient-color), var(--gradient-color)), url(../images/herotablet.jpg);
@@ -692,9 +692,6 @@ li {
 
 @media (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--gradient-color)), to(var(--gradient-color))), url(../images/fond.jpg);
-    background-image: linear-gradient(to right, var(--gradient-color), var(--gradient-color)), url(../images/fond.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -1480,6 +1477,12 @@ li {
   color: var(--main-text-color);
 }
 
+@media (min-width: 767px) {
+  .post__title {
+    text-align: start;
+  }
+}
+
 .post__text {
   font-size: 14px;
   line-height: 24px;
@@ -1999,11 +2002,18 @@ li {
 
 .mobile-menu {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 302px;
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
+}
+
+@media (max-width: 450px) {
+  .mobile-menu {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .mobile-menu__link {
@@ -2012,7 +2022,7 @@ li {
 
 .menu__contakts {
   margin-top: auto;
-  margin-bottom: 0px;
+  margin-bottom: 64px;
 }
 
 .menu__networks {
@@ -2026,6 +2036,7 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 450px;
   margin-top: 0px;
   margin-bottom: 0px;
   font-weight: 500;
@@ -2038,6 +2049,13 @@ li {
   .menu__networks {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 449px) {
+  .menu__networks {
+    font-size: 10px;
+    line-height: 22px;
   }
 }
 
@@ -2074,12 +2092,31 @@ li {
   margin-bottom: 32px;
 }
 
+@media (max-width: 450px) {
+  .contakts-menu__tel {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 .contakts-menu__mailo {
   color: var(--main-gray);
   text-decoration: none;
+  padding-bottom: 0px;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
+}
+
+@media (max-width: 450px) {
+  .contakts-menu__mailo {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.menu__contakts .contakts-menu__link {
+  padding: 0px;
 }
 /*# sourceMappingURL=main.css.map */

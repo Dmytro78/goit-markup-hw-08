@@ -69,11 +69,15 @@
 
 .mobile-menu {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 302px;
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
+  @media (max-width: 450px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .mobile-menu__link {
@@ -82,7 +86,7 @@
 
 .menu__contakts {
   margin-top: auto;
-  margin-bottom: 0px;
+  margin-bottom: 64px;
 }
 
 .menu__networks {
@@ -94,6 +98,7 @@
   justify-content: space-between;
   text-align: center;
   align-items: center;
+  max-width: 450px;
   margin-top: 0px;
   margin-bottom: 0px;
 
@@ -101,6 +106,10 @@
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
+  @media (max-width: 449px) {
+    font-size: 10px;
+    line-height: 22px;
+  }
 }
 
 .mobile-menu__item,
@@ -133,13 +142,26 @@
   line-height: 40px;
   letter-spacing: 0.02em;
   margin-bottom: 32px;
+  @media (max-width: 450px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .contakts-menu__mailo {
   color: var(--main-gray);
   text-decoration: none;
+  padding-bottom: 0px;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
+  @media (max-width: 450px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.menu__contakts .contakts-menu__link {
+  padding: 0px;
 }

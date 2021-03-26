@@ -52,6 +52,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-text-color);
+  @media (min-width: 767px) {
+    text-align: start;
+  }
 }
 
 .post__text {
