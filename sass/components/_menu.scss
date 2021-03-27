@@ -11,8 +11,8 @@
   padding: 48px 40px;
 
   background-color: var(--text-color);
-  z-index: 3;
-  transform: translateX(100%);
+  z-index: 999;
+  transform: translateY(100%);
 
   opacity: 0;
 
@@ -40,7 +40,7 @@
   transition-timing-function: var(--cubic-bezier);*/
 
 .menu__container.is-open {
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 1;
 }
 
@@ -164,4 +164,32 @@
 
 .menu__contakts .contakts-menu__link {
   padding: 0px;
+}
+
+.portfolio-menu__container {
+  display: inline-block;
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  padding: 48px 40px;
+
+  background-color: var(--text-color);
+  z-index: 999;
+  transform: translateX(100%);
+
+  opacity: 0;
+
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.portfolio-menu__container.is-open {
+  transform: translateX(0);
+  opacity: 1;
 }
