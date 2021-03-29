@@ -676,8 +676,16 @@ li {
   margin-right: auto;
 }
 
+@media (min-width: 767px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--gradient-color)), to(var(--gradient-color))), url(../images/fond.jpg);
+    background-image: linear-gradient(to right, var(--gradient-color), var(--gradient-color)), url(../images/fond.jpg);
+  }
+}
+
 @media (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
