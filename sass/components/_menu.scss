@@ -15,7 +15,7 @@
 
   background-color: var(--text-color);
   z-index: 999;
-  transform: translateX(100%);
+  transform: translateY(-100%);
 
   opacity: 0;
 
@@ -43,7 +43,7 @@
   transition-timing-function: var(--cubic-bezier);*/
 
 .menu__container.is-open {
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 1;
 }
 
