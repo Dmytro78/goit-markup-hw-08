@@ -8,6 +8,7 @@
 
   @media (max-width: 1200px) {
     display: block;
+    padding: 21px 0px;
   }
 }
 
@@ -45,16 +46,9 @@
   }
 }
 
-.contakts-menu__link:first-child {
-  @media (max-width: 1200px) {
-    padding-top: 21px;
-  }
-}
-
 .contakts-menu__link:last-child {
   @media (max-width: 1200px) {
     margin-top: 10px;
-    padding-bottom: 21px;
   }
 
   @media (min-width: 1200px) {

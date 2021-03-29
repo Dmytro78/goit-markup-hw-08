@@ -9,7 +9,7 @@
     ),
     url(../images/hero.jpg);
 
-  max-width: 470px;
+  max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;
 
@@ -19,17 +19,6 @@
 
   margin-left: auto;
   margin-right: auto;
-
-  @media (min-width: 767px) {
-    max-width: 1600px;
-    background-color: var(--accent-background-color);
-    background-image: linear-gradient(
-        to right,
-        var(--gradient-color),
-        var(--gradient-color)
-      ),
-      url(../images/herotablet.jpg);
-  }
 
   @media (min-width: 1200px) {
     padding-top: 200px;

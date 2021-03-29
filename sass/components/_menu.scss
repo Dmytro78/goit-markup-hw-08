@@ -1,5 +1,8 @@
 .menu__container {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
   content: '';
 
   position: absolute;
@@ -12,7 +15,7 @@
 
   background-color: var(--text-color);
   z-index: 999;
-  transform: translateY(100%);
+  transform: translateX(100%);
 
   opacity: 0;
 
@@ -40,7 +43,7 @@
   transition-timing-function: var(--cubic-bezier);*/
 
 .menu__container.is-open {
-  transform: translateY(0);
+  transform: translateX(0);
   opacity: 1;
 }
 
@@ -69,7 +72,7 @@
 
 .mobile-menu {
   margin-top: 0px;
-  margin-bottom: 302px;
+  margin-bottom: 0px;
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
